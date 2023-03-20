@@ -10,7 +10,7 @@ public class Telefone {
             throw new IllegalArgumentException("DDD inválido");
         }
         this.ddd = ddd;
-        if(numero == null || !numero.matches("9\\d|[1-9]\\d{8}")) {
+        if(numero == null || !numero.matches("9\\d|[1-9]\\d{4}[\\-]?[0-9]{4}")) {
             throw new IllegalArgumentException("Número inválido");
         }
         this.numero = numero;
@@ -22,5 +22,13 @@ public class Telefone {
 
     public String getNumero() {
         return numero;
+    }
+
+    @Override
+    public String toString() {
+        return "Telefone{" +
+                "ddd='" + ddd + '\'' +
+                ", numero='" + numero + '\'' +
+                '}';
     }
 }

@@ -1,14 +1,13 @@
 package escola.escola;
 
 import escola.CPF;
-import escola.Email;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-public class CPFlTest {
+public class CPFTest {
 
     @Test
     @DisplayName("Não deveria criar cpf's inválidos")

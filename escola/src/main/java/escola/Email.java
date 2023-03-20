@@ -14,4 +14,11 @@ public class Email {
     public String getEndereco() {
         return endereco;
     }
+
+    @Override
+    public String toString() {
+        return "Email{" +
+                "endereco='" + endereco + '\'' +
+                '}';
+    }
 }

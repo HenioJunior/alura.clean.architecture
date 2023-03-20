@@ -54,24 +54,21 @@
       <recent name="escola.escola" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TelefonelTest.telefoneValido">
-    <configuration name="CPFlTest.cpfInvalido" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.FabricaAlunoTest.criarAluno">
+    <configuration name="FabricaDeAluno" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="escola.FabricaDeAluno" />
       <module name="escola" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="escola.escola.*" />
+          <option name="PATTERN" value="escola.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="escola.escola" />
-      <option name="MAIN_CLASS_NAME" value="escola.escola.CPFlTest" />
-      <option name="METHOD_NAME" value="cpfInvalido" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CPFlTest.cpfValido" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CPFTest.cpfValido" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="escola" />
       <extension name="coverage">
         <pattern>
@@ -80,14 +77,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="escola.escola" />
-      <option name="MAIN_CLASS_NAME" value="escola.escola.CPFlTest" />
+      <option name="MAIN_CLASS_NAME" value="escola.escola.CPFTest" />
       <option name="METHOD_NAME" value="cpfValido" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmailTest.criarEmail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FabricaAlunoTest.criarAluno" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="escola" />
       <extension name="coverage">
         <pattern>
@@ -96,8 +93,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="escola.escola" />
-      <option name="MAIN_CLASS_NAME" value="escola.escola.EmailTest" />
-      <option name="METHOD_NAME" value="criarEmail" />
+      <option name="MAIN_CLASS_NAME" value="escola.escola.FabricaAlunoTest" />
+      <option name="METHOD_NAME" value="criarAluno" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -137,11 +134,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FabricaAlunoTest.criarAluno" />
+        <item itemvalue="Application.FabricaDeAluno" />
         <item itemvalue="JUnit.TelefonelTest.telefoneValido" />
         <item itemvalue="JUnit.TelefonelTest.telefoneInvalido" />
-        <item itemvalue="JUnit.CPFlTest.cpfValido" />
-        <item itemvalue="JUnit.EmailTest.criarEmail" />
-        <item itemvalue="JUnit.CPFlTest.cpfInvalido" />
+        <item itemvalue="JUnit.CPFTest.cpfValido" />
       </list>
     </recent_temporary>
   </component>
