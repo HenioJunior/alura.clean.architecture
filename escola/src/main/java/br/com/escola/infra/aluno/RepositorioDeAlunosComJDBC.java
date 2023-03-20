@@ -1,13 +1,12 @@
 package br.com.escola.infra.aluno;
 
-import br.com.escola.dominio.aluno.Aluno;
-import br.com.escola.dominio.aluno.CPF;
-import br.com.escola.dominio.aluno.RepositorioDeAlunos;
-import br.com.escola.dominio.aluno.Telefone;
+import br.com.escola.dominio.aluno.*;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class RepositorioDeAlunosComJDBC implements RepositorioDeAlunos {
@@ -43,11 +42,67 @@ public class RepositorioDeAlunosComJDBC implements RepositorioDeAlunos {
 
     @Override
     public Aluno buscarPorCPF(CPF cpf) {
-        return null;
+        try{
+            String sql = "SELECT id, nome, email FROM ALUNO WHERE cpf = ?";
+            PreparedStatement ps = connection.prepareStatement(sql);
+            ps.setString(1, cpf.getNumero());
+
+            ResultSet rs = ps.executeQuery();
+            boolean encontrou = rs.next();
+            if(!encontrou) {
+                throw new IllegalArgumentException("Aluno não encontrado!");
+            }
+
+            String nome = rs.getString("nome");
+            Email email =  new Email(rs.getString("email"));
+            Aluno encontrado = new Aluno(cpf, nome, email);
+
+            long id = rs.getLong("id");
+            sql = "SELECT ddd, numero FROM TELEFONE WHERE aluno_id = ?";
+            ps = connection.prepareStatement(sql);
+            ps.setLong(1, id);
+            rs = ps.executeQuery();
+            while(rs.next()) {
+                String numero = rs.getString("numero");
+                String ddd = rs.getString("ddd");
+                encontrado.adicionarTelefone(ddd, numero);
+            }
+            return encontrado;
+
+        } catch(SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
     public List<Aluno> listarTodosAlunosMatriculados() {
-        return null;
+        try{
+            String sql = "SELECT id, cpf, nome, email FROM ALUNO";
+            PreparedStatement ps = connection.prepareStatement(sql);
+            ResultSet rs = ps.executeQuery();
+            boolean encontrou = rs.next();
+            List<Aluno> alunos = new ArrayList<>();
+            while(rs.next()) {
+                CPF cpf = new CPF(rs.getString("cpf"));
+                String nome = rs.getString("nome");
+                Email email =  new Email(rs.getString("email"));
+                Aluno aluno = new Aluno(cpf, nome, email);
+
+                long id = rs.getLong("id");
+                sql = "SELECT ddd, numero FROM TELEFONE WHERE aluno_id = ?";
+                PreparedStatement psTelefone = connection.prepareStatement(sql);
+                ps.setLong(1, id);
+                ResultSet rsTelefone = psTelefone.executeQuery();
+                while(rsTelefone.next()) {
+                    String numero = rsTelefone.getString("numero");
+                    String ddd = rsTelefone.getString("ddd");
+                    aluno.adicionarTelefone(ddd, numero);
+                }
+            }
+            return alunos;
+
+        } catch(SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
