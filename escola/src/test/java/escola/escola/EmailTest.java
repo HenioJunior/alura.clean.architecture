@@ -1,5 +1,6 @@
-package escola;
+package escola.escola;
 
+import escola.Email;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
