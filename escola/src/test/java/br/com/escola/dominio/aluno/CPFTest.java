@@ -1,6 +1,6 @@
-package escola.escola;
+package br.com.escola.dominio.aluno;
 
-import escola.CPF;
+import br.com.escola.dominio.aluno.CPF;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
