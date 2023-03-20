@@ -36,12 +36,95 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/dev/alura.clean.architecture/escola/src/test/java/escola",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="escola" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\dev\alura.clean.architecture\escola\src\test\java\escola" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.CPFlTest.cpfValido">
+    <configuration name="CPFlTest.cpfInvalido" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="escola" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="escola.escola.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="escola.escola" />
+      <option name="MAIN_CLASS_NAME" value="escola.escola.CPFlTest" />
+      <option name="METHOD_NAME" value="cpfInvalido" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CPFlTest.cpfValido" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="escola" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="escola.escola.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="escola.escola" />
+      <option name="MAIN_CLASS_NAME" value="escola.escola.CPFlTest" />
+      <option name="METHOD_NAME" value="cpfValido" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmailTest.criarEmail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="escola" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="escola.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="escola" />
+      <option name="MAIN_CLASS_NAME" value="escola.EmailTest" />
+      <option name="METHOD_NAME" value="criarEmail" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmailTest.emailEnderecoInvalido" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="escola" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="escola.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="escola" />
+      <option name="MAIN_CLASS_NAME" value="escola.EmailTest" />
+      <option name="METHOD_NAME" value="emailEnderecoInvalido" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CPFlTest.cpfValido" />
+        <item itemvalue="JUnit.EmailTest.criarEmail" />
+        <item itemvalue="JUnit.CPFlTest.cpfInvalido" />
+        <item itemvalue="JUnit.EmailTest.emailEnderecoInvalido" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
